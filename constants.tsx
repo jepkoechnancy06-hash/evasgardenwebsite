@@ -75,5 +75,6 @@ export const CONTACT_INFO = {
   parking: 'Available',
   power: 'Available / Generator-friendly',
   accessibility: 'Easy vendor access',
-  whatsapp: 'https://wa.me/254000000000', // Placeholder
+  whatsappNumber: '254000000000',
+  whatsappUrl: "https://wa.me/254000000000?text=Hello%20Eva's%20Garden,%20I'd%20like%20to%20inquire%20about%20booking%20the%20venue%20for%20an%20event.",
 };

@@ -21,12 +21,12 @@ const Contact: React.FC = () => {
 
   return (
     <div className="pt-20 md:pt-32">
-      <Section bg="bg-stone-50">
+      <Section bg="bg-purple-50/20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-stone-400 text-xs uppercase tracking-[0.4em] mb-4 block">Get In Touch</span>
-            <h2 className="text-4xl md:text-6xl serif mb-6 italic">Let’s Create Something Beautiful</h2>
-            <p className="text-stone-500 max-w-2xl mx-auto">
+            <span className="text-purple-400 text-xs uppercase tracking-[0.4em] mb-4 block font-bold">Get In Touch</span>
+            <h2 className="text-4xl md:text-7xl serif mb-6 italic text-purple-950 leading-tight">Let’s Create Something Beautiful</h2>
+            <p className="text-stone-500 max-w-2xl mx-auto text-lg">
               We’d love to host your next celebration at Eva’s Garden. Get in touch to check availability, schedule a viewing, or request more information.
             </p>
           </div>
@@ -34,47 +34,50 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Details & Info */}
             <div className="space-y-12">
-              <div className="bg-white p-10 rounded-2xl shadow-sm border border-stone-100">
-                <h3 className="text-2xl serif mb-8 border-b pb-4 border-stone-50">Venue Information</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4">
+              <div className="bg-white p-10 rounded-3xl shadow-xl shadow-purple-900/5 border border-purple-100">
+                <h3 className="text-2xl serif mb-8 border-b pb-6 border-purple-50 text-purple-900">Venue Information</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 gap-x-6">
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Location</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.location}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Location</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.location}</p>
                   </div>
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Type</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.type}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Type</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.type}</p>
                   </div>
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Capacity</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.capacity}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Capacity</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.capacity}</p>
                   </div>
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Parking</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.parking}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Parking</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.parking}</p>
                   </div>
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Power</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.power}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Power</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.power}</p>
                   </div>
                   <div>
-                    <h4 className="text-xs uppercase tracking-widest text-stone-400 mb-2">Accessibility</h4>
-                    <p className="text-stone-800">{CONTACT_INFO.accessibility}</p>
+                    <h4 className="text-[10px] uppercase tracking-[0.3em] text-purple-400 mb-2 font-bold">Accessibility</h4>
+                    <p className="text-stone-800 font-medium">{CONTACT_INFO.accessibility}</p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center justify-center p-8 bg-stone-900 rounded-2xl text-center">
-                <div className="space-y-6">
-                  <h4 className="text-white serif text-2xl italic">Direct Inquiry</h4>
-                  <p className="text-stone-400 text-sm">Preferred for quick checks and bookings</p>
+              <div className="flex items-center justify-center p-12 bg-purple-900 rounded-3xl text-center shadow-2xl shadow-purple-900/20 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-purple-200"></div>
+                <div className="space-y-8 relative z-10">
+                  <h4 className="text-white serif text-3xl italic">Direct Inquiry</h4>
+                  <p className="text-purple-200 text-sm tracking-wide">Preferred for quick checks and bookings</p>
                   <a 
-                    href={CONTACT_INFO.whatsapp} 
+                    href={CONTACT_INFO.whatsappUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-green-600 text-white px-8 py-4 rounded-full font-bold hover:bg-green-700 transition-all transform hover:scale-105"
+                    className="inline-flex items-center gap-4 bg-[#25D366] text-white px-10 py-5 rounded-full font-bold hover:bg-[#1ebe57] transition-all transform hover:scale-105 shadow-xl"
                   >
-                    <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.569 3.967 1.582 5.513l-.999 3.646 3.84-.984s.46.29.066.126zM17.387 14.39c-.295-.147-1.744-.859-2.013-.957-.268-.099-.463-.147-.659.148-.195.295-.756.957-.927 1.154-.171.197-.341.221-.637.074-.295-.147-1.248-.46-2.379-1.468-.88-.785-1.472-1.754-1.644-2.049-.171-.295-.018-.454.129-.601.134-.132.295-.345.443-.517.148-.172.197-.295.295-.492.099-.197.05-.369-.025-.517-.074-.147-.659-1.589-.902-2.171-.237-.568-.478-.49-.659-.499-.17-.008-.365-.01-.56-.01-.195 0-.512.074-.78.369-.268.295-1.024 1.001-1.024 2.44s1.048 2.829 1.195 3.026c.147.197 2.064 3.151 4.997 4.415.698.301 1.244.481 1.67.617.7.223 1.338.192 1.841.118.561-.083 1.744-.713 1.989-1.402.245-.689.245-1.279.171-1.402-.074-.123-.268-.197-.563-.344z"/></svg>
+                    <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72 1.05 4.105 1.604 5.711 1.604h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
                     Chat on WhatsApp
                   </a>
                 </div>
@@ -82,41 +85,46 @@ const Contact: React.FC = () => {
             </div>
 
             {/* AI Assistant Form */}
-            <div className="bg-white p-10 rounded-2xl shadow-xl border border-stone-100 flex flex-col h-full">
-              <div className="mb-8">
-                <h3 className="text-2xl serif mb-2">Plan with AI</h3>
-                <p className="text-sm text-stone-400 uppercase tracking-widest">Eva's Garden Concierge</p>
+            <div className="bg-white p-10 md:p-12 rounded-3xl shadow-2xl shadow-purple-900/10 border border-purple-100 flex flex-col h-full">
+              <div className="mb-10">
+                <h3 className="text-3xl serif mb-3 text-purple-950">Plan with AI</h3>
+                <p className="text-[10px] text-purple-400 uppercase tracking-[0.4em] font-bold">Eva's Garden Concierge</p>
               </div>
               
               <div className="flex-grow">
                 {aiResponse ? (
-                  <div className="bg-stone-50 p-6 rounded-xl border border-stone-200 animate-fade-in mb-6">
-                    <p className="text-stone-700 italic serif text-lg leading-relaxed mb-6">
+                  <div className="bg-purple-50 p-8 rounded-2xl border border-purple-100 animate-fade-in mb-8 relative">
+                    <div className="absolute -top-4 -left-4 w-10 h-10 bg-purple-900 rounded-full flex items-center justify-center text-white shadow-lg">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+                    </div>
+                    <p className="text-purple-900 italic serif text-xl leading-relaxed mb-8 pt-2">
                       "{aiResponse}"
                     </p>
                     <button 
                       onClick={() => setAiResponse(null)}
-                      className="text-stone-400 text-xs uppercase tracking-widest hover:text-stone-800 transition-colors"
+                      className="text-purple-500 text-[10px] uppercase tracking-[0.2em] font-bold hover:text-purple-800 transition-colors border-b border-purple-200 pb-1"
                     >
                       Ask another question
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleAiConsult} className="space-y-6">
-                    <p className="text-stone-600 text-sm leading-relaxed">
+                  <form onSubmit={handleAiConsult} className="space-y-8">
+                    <p className="text-stone-600 leading-relaxed italic serif">
                       Describe your dream event or ask any question. Our AI assistant will help you visualize it at our venue.
                     </p>
-                    <textarea 
-                      value={inquiry}
-                      onChange={(e) => setInquiry(e.target.value)}
-                      placeholder="e.g. I'm looking for a sunset garden wedding with a rustic theme for about 150 guests..."
-                      className="w-full h-40 p-4 bg-stone-50 border border-stone-100 rounded-xl focus:outline-none focus:ring-1 focus:ring-stone-300 transition-all resize-none"
-                    ></textarea>
+                    <div className="relative">
+                      <textarea 
+                        value={inquiry}
+                        onChange={(e) => setInquiry(e.target.value)}
+                        placeholder="e.g. I'm looking for a sunset garden wedding with a rustic theme for about 150 guests..."
+                        className="w-full h-48 p-6 bg-purple-50/50 border border-purple-50 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all resize-none text-stone-800 placeholder:text-purple-300"
+                      ></textarea>
+                    </div>
                     <button 
                       disabled={loading}
                       type="submit"
-                      className={`w-full py-4 rounded-full text-xs uppercase tracking-[0.2em] font-bold transition-all ${
-                        loading ? 'bg-stone-200 text-stone-400 cursor-not-allowed' : 'bg-stone-800 text-white hover:bg-stone-700'
+                      className={`w-full py-5 rounded-full text-xs uppercase tracking-[0.3em] font-bold transition-all shadow-xl ${
+                        loading ? 'bg-purple-100 text-purple-300 cursor-not-allowed' : 'bg-purple-800 text-white hover:bg-purple-900 transform hover:-translate-y-1'
                       }`}
                     >
                       {loading ? 'Consulting Assistant...' : 'Get Personalized Ideas'}
@@ -125,9 +133,9 @@ const Contact: React.FC = () => {
                 )}
               </div>
 
-              <div className="mt-8 pt-8 border-t border-stone-50 text-center">
-                <p className="text-[10px] uppercase tracking-widest text-stone-300">
-                  Powered by Gemini AI Experience
+              <div className="mt-12 pt-8 border-t border-purple-50 text-center">
+                <p className="text-[9px] uppercase tracking-[0.4em] text-purple-300/60 font-medium">
+                  Intelligent Venue Concierge by Gemini
                 </p>
               </div>
             </div>
