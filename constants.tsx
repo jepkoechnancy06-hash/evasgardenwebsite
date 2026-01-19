@@ -65,7 +65,6 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   { url: '/evasgardens3.jpeg', category: 'aerial', alt: 'Aerial view of Eva\'s Garden venue' },
   { url: '/evasgarden5.jpeg', category: 'sunset', alt: 'Golden hour at Eva\'s Garden' },
   { url: '/evasgarden6.jpeg', category: 'empty', alt: 'Lush greenery at Eva\'s Garden' },
-  { url: '/evasgarden7.jpeg', category: 'setup', alt: 'Tented garden celebration setup' },
   { url: '/evasgarden8.jpeg', category: 'sunset', alt: 'Sunset moments at the garden' },
   { url: '/evasgarden9.jpeg', category: 'empty', alt: 'Serene garden landscape' },
   { url: '/evasgarden10.jpeg', category: 'setup', alt: 'Event preparation at Eva\'s Garden' },
