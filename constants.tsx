@@ -13,21 +13,21 @@ export const NAV_ITEMS: NavItem[] = [
 export const FEATURED_SPACES: FeatureSpace[] = [
   {
     title: '🌿 The Garden Ceremony Space',
-    description: 'Say your vows surrounded by lush greenery, open skies, and nature at its most beautiful. Our garden ceremony area provides a romantic and peaceful setting for unforgettable “I do” moments.',
+    description: 'Say your vows surrounded by lush greenery, open skies, and nature at its most beautiful. Our garden ceremony area provides a romantic and peaceful setting for unforgettable "I do" moments.',
     icon: 'leaf',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200',
+    image: '/evasgarden2.jpeg',
   },
   {
     title: '✨ Reception & Celebration Area',
     description: 'The expansive lawn transforms seamlessly from a daytime celebration to an elegant evening reception, accommodating both tented and open-air setups.',
     icon: 'sparkles',
-    image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=1200',
+    image: '/evasgarden7.jpeg',
   },
   {
     title: '🍃 Pre-Event & Cocktail Lawn',
     description: 'Perfect for welcome drinks, guest mingling, and golden-hour photos, this space offers a relaxed transition between ceremony and celebration.',
     icon: 'cocktail',
-    image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1200',
+    image: '/evasgarden8.jpeg',
   },
 ];
 
@@ -60,12 +60,17 @@ export const EVENT_TYPES: EventType[] = [
 ];
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200', category: 'empty', alt: 'Empty garden lawn' },
-  { url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1200', category: 'setup', alt: 'Wedding reception setup' },
-  { url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200', category: 'aerial', alt: 'Aerial view of greenery' },
-  { url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1200', category: 'sunset', alt: 'Sunset over the garden' },
-  { url: 'https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&q=80&w=1200', category: 'empty', alt: 'Mature trees in Eva\'s Garden' },
-  { url: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1200', category: 'setup', alt: 'Tented garden event' },
+  { url: '/evasgarden2.jpeg', category: 'empty', alt: 'Beautiful garden lawn at Eva\'s Garden' },
+  { url: '/evasgarden4.jpeg', category: 'setup', alt: 'Elegant event setup at Eva\'s Garden' },
+  { url: '/evasgardens3.jpeg', category: 'aerial', alt: 'Aerial view of Eva\'s Garden venue' },
+  { url: '/evasgarden5.jpeg', category: 'sunset', alt: 'Golden hour at Eva\'s Garden' },
+  { url: '/evasgarden6.jpeg', category: 'empty', alt: 'Lush greenery at Eva\'s Garden' },
+  { url: '/evasgarden7.jpeg', category: 'setup', alt: 'Tented garden celebration setup' },
+  { url: '/evasgarden8.jpeg', category: 'sunset', alt: 'Sunset moments at the garden' },
+  { url: '/evasgarden9.jpeg', category: 'empty', alt: 'Serene garden landscape' },
+  { url: '/evasgarden10.jpeg', category: 'setup', alt: 'Event preparation at Eva\'s Garden' },
+  { url: '/evasgarden11.jpeg', category: 'aerial', alt: 'Bird\'s eye view of the venue' },
+  { url: '/WhatsApp Image 2026-01-19 at 10.31.37.jpeg', category: 'sunset', alt: 'Evening glow at Eva\'s Garden' },
 ];
 
 export const CONTACT_INFO = {

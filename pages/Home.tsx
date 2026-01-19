@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=2000" 
+            src="/evasgarden4.jpeg" 
             alt="Eva's Garden" 
             className="w-full h-full object-cover filter brightness-[0.6] scale-105 animate-slow-zoom"
           />
