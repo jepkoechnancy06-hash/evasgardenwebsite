@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
             <li>Location: {CONTACT_INFO.location}</li>
             <li>Type: {CONTACT_INFO.type}</li>
             <li>Parking: {CONTACT_INFO.parking}</li>
-            <li>Power: {CONTACT_INFO.power}</li>
+            
           </ul>
         </div>
         <div>
