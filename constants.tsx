@@ -15,19 +15,19 @@ export const FEATURED_SPACES: FeatureSpace[] = [
     title: '🌿 The Garden Ceremony Space',
     description: 'Say your vows surrounded by lush greenery, open skies, and nature at its most beautiful. Our garden ceremony area provides a romantic and peaceful setting for unforgettable "I do" moments.',
     icon: 'leaf',
-    image: '/evasgarden2.jpeg',
+    image: '/coktail.jpeg',
   },
   {
     title: '✨ Reception & Celebration Area',
     description: 'The expansive lawn transforms seamlessly from a daytime celebration to an elegant evening reception, accommodating both tented and open-air setups.',
     icon: 'sparkles',
-    image: '/evasgarden7.jpeg',
+    image: '/gardenspace.jpeg',
   },
   {
     title: '🍃 Pre-Event & Cocktail Lawn',
     description: 'Perfect for welcome drinks, guest mingling, and golden-hour photos, this space offers a relaxed transition between ceremony and celebration.',
     icon: 'cocktail',
-    image: '/evasgarden8.jpeg',
+    image: '/receptionandcelebration.jpeg',
   },
 ];
 
