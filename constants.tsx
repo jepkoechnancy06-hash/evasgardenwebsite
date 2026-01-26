@@ -1,5 +1,5 @@
 
-import { NavItem, FeatureSpace, EventType, GalleryImage } from './types';
+import { NavItem, FeatureSpace, EventType, GalleryItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#/' },
@@ -59,17 +59,47 @@ export const EVENT_TYPES: EventType[] = [
   },
 ];
 
-export const GALLERY_IMAGES: GalleryImage[] = [
-  { url: '/evasgarden2.jpeg', category: 'empty', alt: 'Beautiful garden lawn at Eva\'s Garden' },
-  { url: '/evasgarden4.jpeg', category: 'setup', alt: 'Elegant event setup at Eva\'s Garden' },
-  { url: '/evasgardens3.jpeg', category: 'aerial', alt: 'Aerial view of Eva\'s Garden venue' },
-  { url: '/evasgarden5.jpeg', category: 'sunset', alt: 'Golden hour at Eva\'s Garden' },
-  { url: '/evasgarden6.jpeg', category: 'empty', alt: 'Lush greenery at Eva\'s Garden' },
-  { url: '/evasgarden8.jpeg', category: 'sunset', alt: 'Sunset moments at the garden' },
-  { url: '/evasgarden9.jpeg', category: 'empty', alt: 'Serene garden landscape' },
-  { url: '/evasgarden10.jpeg', category: 'setup', alt: 'Event preparation at Eva\'s Garden' },
-  { url: '/evasgarden11.jpeg', category: 'aerial', alt: 'Bird\'s eye view of the venue' },
-  { url: '/WhatsApp Image 2026-01-19 at 10.31.37.jpeg', category: 'sunset', alt: 'Evening glow at Eva\'s Garden' },
+export const GALLERY_ITEMS: GalleryItem[] = [
+  { type: 'image', url: '/header.jpeg', category: 'sunset', alt: 'Eva\'s Garden entrance view' },
+  { type: 'image', url: '/evasgarden2.jpeg', category: 'empty', alt: 'Beautiful garden lawn at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden4.jpeg', category: 'setup', alt: 'Elegant event setup at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden5.jpeg', category: 'sunset', alt: 'Golden hour at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden6.jpeg', category: 'empty', alt: 'Lush greenery at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden7.jpeg', category: 'setup', alt: 'Celebration setup at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden8.jpeg', category: 'sunset', alt: 'Sunset moments at the garden' },
+  { type: 'image', url: '/evasgarden9.jpeg', category: 'empty', alt: 'Serene garden landscape' },
+  { type: 'image', url: '/evasgarden10.jpeg', category: 'setup', alt: 'Event preparation at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden11.jpeg', category: 'aerial', alt: 'Bird\'s eye view of the venue' },
+  { type: 'image', url: '/evasgarden12.jpeg', category: 'empty', alt: 'Garden view at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden13.jpeg', category: 'setup', alt: 'Event styling at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden14.jpeg', category: 'sunset', alt: 'Warm evening light in the garden' },
+  { type: 'image', url: '/evasgarden15.jpeg', category: 'setup', alt: 'Reception detail at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden16.jpeg', category: 'empty', alt: 'Open garden space at Eva\'s Garden' },
+  { type: 'image', url: '/evasgarden17.jpeg', category: 'setup', alt: 'Celebration moment at Eva\'s Garden' },
+  { type: 'image', url: '/evasgardens3.jpeg', category: 'aerial', alt: 'Aerial view of Eva\'s Garden venue' },
+  { type: 'image', url: '/evasgardenheli.jpeg', category: 'aerial', alt: 'Aerial view of the venue grounds' },
+  { type: 'image', url: '/evasgardenheli2.jpeg', category: 'aerial', alt: 'Aerial venue landscape' },
+  { type: 'image', url: '/evasgardenimages.jpeg', category: 'empty', alt: 'Garden greenery and lawn' },
+  { type: 'image', url: '/evasgardenimagesd.jpeg', category: 'setup', alt: 'Styled garden setup' },
+  { type: 'image', url: '/evasgardensimages.jpeg', category: 'sunset', alt: 'Golden hour at the venue' },
+  { type: 'image', url: '/cocktail.jpeg', category: 'setup', alt: 'Cocktail lawn setting' },
+  { type: 'image', url: '/gardenspace.jpeg', category: 'empty', alt: 'Garden ceremony space' },
+  { type: 'image', url: '/receptionandcelebration.jpeg', category: 'setup', alt: 'Reception and celebration area' },
+  { type: 'image', url: '/WhatsApp Image 2026-01-19 at 10.31.37.jpeg', category: 'sunset', alt: 'Evening glow at Eva\'s Garden' },
+  {
+    type: 'video',
+    url: '/evasvideo.mp4',
+    poster: '/evasgardenvidzjpeg.jpeg',
+    category: 'video',
+    alt: 'Venue walkthrough video',
+  },
+  {
+    type: 'video',
+    url: '/evasvideos.mp4',
+    poster: '/evasgardenvidzjpeg.jpeg',
+    category: 'video',
+    alt: 'Eva\'s Garden highlights video',
+  },
 ];
 
 export const CONTACT_INFO = {

@@ -17,8 +17,12 @@ export interface EventType {
   image: string;
 }
 
-export interface GalleryImage {
+export type GalleryCategory = 'empty' | 'setup' | 'aerial' | 'sunset' | 'video';
+
+export interface GalleryItem {
+  type: 'image' | 'video';
   url: string;
-  category: 'empty' | 'setup' | 'aerial' | 'sunset';
+  poster?: string;
+  category: GalleryCategory;
   alt: string;
 }
