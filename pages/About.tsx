@@ -54,7 +54,7 @@ const About: React.FC = () => {
                 <span className="w-2 h-2 bg-purple-600 rounded-full"></span>
                 Destination & local weddings
               </li>
-              <li className="flex items-center gap-4">
+              <li className="flex items-center gyyap-4">
                 <span className="w-2 h-2 bg-purple-600 rounded-full"></span>
                 Traditional & modern celebrations
               </li>
@@ -64,7 +64,7 @@ const About: React.FC = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-purple-800 rounded-full -mr-16 -mt-16 opacity-50"></div>
             <h3 className="text-3xl serif mb-6 text-white italic relative z-10">Your Story, Your Way</h3>
             <p className="text-purple-100 leading-relaxed text-sm uppercase tracking-widest relative z-10 opacity-90">
-              Couples may work with their preferred planners and vendors, subject to venue guidelines, ensuring each wedding reflects their unique love story.
+             Preferred vendors listed in our website or subject to your vendors being in our listed list
             </p>
             <a 
               href="#/contact" 
